@@ -9,7 +9,7 @@ def digit_sum(n):
 
 def lucky_number(n):
     """한 자리 수가 될 때까지 digit_sum을 반복한다."""
-    while n > 10:
+    while n >= 10:
         n = digit_sum(n)
     return n
 
